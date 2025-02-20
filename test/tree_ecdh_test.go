@@ -66,7 +66,7 @@ func TestTreeFourNodes(t *testing.T) {
 	expected := tree_ecdh.GenerateSharedSecret(ab, ec.ScalarMult(*cd, ec.BasePointGGet()))
 
 	if secret.Cmp(expected) != 0 {
-		t.Error("Tree DH secret mismatch for 5 nodes")
+		t.Error("Tree DH secret mismatch for 4 nodes")
 	}
 }
 
